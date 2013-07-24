@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>
+    RoboCup Université Laval
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link id='bootstrap' href="css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  </style>
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js">
+  </script>
+  <script type="text/javascript" src="js/konami.js">
+  </script>
+  <script type="text/javascript">
+  var changeStyle = function() {
+    document.getElementById('bootstrap').href='css/geo.css';
+  }
+  var konami = new Konami(changeStyle);
+  </script>
+  <script type="text/javascript" src="js/bootstrap.js">
+</script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+        </a>
+        <a class="brand" href="#">RoboCup ULaval<img src="img/ROBOCUPlogo_small.png" alt="Logo RoboCup"></a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li>
+              <a href="#">Accueil</a>
+            </li>
+            <li>
+              <a href="#equipe">Équipe</a>
+            </li>
+            <li>
+              <a href="files/plan_commandite.pdf" target="_blank">Plan de commandite</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron masthead">
+    <div class="container">
+      <img src="img/ROBOCUPlogo.png" alt="Logo ROBOCUP">
+      <p>
+        Bienvenue sur le site officiel de RoboCup Université Laval. Vous trouverez ici toutes les informations pertinentes sur le groupe RoboCup de l'Université Laval. 
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span4 well fixed-height-triple">
+        <img src="img/fb.png">
+        <h3>
+          Groupe facebook
+        </h3>
+        <p>
+          Suit notre page facebook pour être au courant de tous les avancements et de toutes les activités du groupe.
+        </p>
+        <p>
+          <a class="btn btn-primary" href="https://www.facebook.com/RobocupULaval/"><img src="img/fb-icon.png"> Suivre la page »</a>
+        </p>
+      </div>
+      <div class="span4 well fixed-height-triple">
+        <img src="img/link.png">
+        <h3>
+          Liens
+        </h3>
+        <ul class="nav nav-tabs">
+           <li class="active">
+            <a href="#activites" data-toggle="tab">Activités</a>
+          </li>
+          <li >
+            <a href="#robocup" data-toggle="tab">Importants</a>
+          </li>
+
+
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="activites">
+            <ul>
+               <li>
+                <a href="http://www.robocup-2013.org/">Compétition 2013 au Pays-Bas en cours !</a>
+              </li>
+               <li>
+                <a>Activités de recrutement à venir !</a>
+              </li>
+              
+               <li>
+                <a>Présentation à l'université à venir !</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="tab-pane" id="robocup">
+            <ul>
+              <li>
+                <a href="http://robocupssl.cpe.ku.ac.th/">RoboCup SSL</a>
+              </li>
+              <li>
+                <a href="http://robocupssl.cpe.ku.ac.th/rules:main">RoboCup SSL Rules </a>
+              </li>
+              <li>
+                <a href="http://robocupssl.cpe.ku.ac.th/sslvision/">SSL Vision</a>
+              </li>
+              <li>
+                <a href="https://github.com/mani-monaj/grSim">GrSim</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div id="contact" class="span4 well fixed-height-triple">
+        <img src="img/location.png">
+        <h3>
+          Contact
+        </h3>
+        <address>
+          Pavillon Adrien-Pouliot - <b>Local 0108</b><br>
+          Université Laval, G1V 0A6<br>
+          Courriel : <a href="mailto:robocupuniversitelaval@gmail.com">robocupuniversitelaval@gmail.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="row-fluid" id="equipe">
+      <div id="rep_table" class="span12 well">
+        <h2>
+          Équipes
+        </h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                Équipe
+              </th>
+              <th>
+                Membres
+              </th>
+              <th>
+                Contact
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Équipe logiciel haut-niveau
+              </td>
+              <td>
+                Guillaume Croteau, Alexandre Girard, Jacques-Olivier D. Bernier, Didia Diasonama, Antoine Buteau
+              </td>
+              <td>
+                <a href="mailto:antoine.buteau.1@ulaval.ca">antoine.buteau.1@ulaval.ca</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Équipe électro-mécanique
+              </td>
+              <td>
+                Jessy Mathault, William Tousignant Gendron, Christophe Durand, Mathieu Vaudrin, Patrick Janelle
+              </td>
+              <td>
+                <a href="mailto:jessy.mathault.1@ulaval.ca">jessy.mathault.1@ulaval.caa</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Équipe logiciel bas-niveau
+              </td>
+              <td>
+                Martin Saindon, Mathieu Garon, Julien Becirovski, André Beaupré
+              </td>
+              <td>
+                <a href="mailto:mathieu.garon.1@ulaval.ca">mathieu.garon.1@ulaval.ca</a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+        <p>
+          <b>Pour contacter l'équipe :</b> <a href="mailto:robocupuniversitelaval@gmail.com">robocupuniversitelaval@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3 well fixed-height-quad justified">
+        <img class="centered" src="img/group.png">
+        <p>
+        
+          Nous sommes à la recherche constante d'étudiant voulant participer au projet. Passez nous voir à notre local ou communiquez avec nous.
+        </p>
+      </div>
+      <div class="span3 well fixed-height-quad justified">
+        <img class="centered" src="img/money.png">
+        <p>
+          Nous sommes à la recherche de financement. Toutes les informations sont dans le plan de commandite ! Merci de nous aider à faire avancer ce fabuleux projet.
+        </p>
+      </div>
+      <div class="span3 well fixed-height-quad justified">
+        <img class="centered" src="img/blackandroid.png">
+        <p>
+          Nous sommes disponibles pour faire des démonstrations et parler du projet. Entrez en contact avec nous, pour que l'on puisse arranger un rendez-vous.
+        </p>
+      </div>
+      <div class="span3 well fixed-height-quad justified">
+        <img class="centered" src="img/smallearth.png">
+        <p>
+        Nous sommes la seule équipe de RoboCup SSL au Québec. Pour en savoir plus sur l'organisation mondiale RoboCup, cliquez sur ce lien <a href="http://www.robocup.org/" target="new">www.robocup.org</a> .</p>
+      </div>
+    </div>
+ 
+
+  <footer>
+      <div class="row-fluid">
+        <div class="span1">
+          <img src="img/robocupsimple.png">
+        </div>
+        <div class="span11">
+          <p>
+            <b>RoboCup Université laval</b><br>
+            Pavillon Adrien-Pouliot - Local 0108, Université Laval, G1V 0A6<br>
+            <b> Courriel : <a href="mailto:robocupuniversitelaval@gmail.com">robocupuniversitelaval@gmail.com</a></b>
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <footer>
+      <div class="row-fluid">
+        <div class="span11">
+        <br>
+          <p>
+            Site réalisé à partir du modèle de l'<a href="http://aeglo.ift.ulaval.ca/" target="new">AEGLO - Université Laval</a> 
+            <br> Tout le crédit à William Fortin de l'AEGLO
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
